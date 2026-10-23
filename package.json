@@ -1,0 +1,33 @@
+{
+  "name": "ai-receptionist",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for Dr. Shah's Family Practice AI receptionist appointment notifications.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "test": "NODE_ENV=test node --import tsx --test tests/*.test.ts",
+    "demo:book": "tsx scripts/demo-book.ts"
+  },
+  "dependencies": {
+    "@elevenlabs/elevenlabs-js": "^2.74.0",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "resend": "^6.34.1",
+    "sql.js": "^1.15.1",
+    "twilio": "^6.2.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/sql.js": "^1.4.11",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
